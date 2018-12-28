@@ -1,0 +1,20 @@
+# JsonAPI Router
+POST        /api/v1/:pkg/:step                     controllers.PhJsonApiController.routes(pkg: String, step: Int)
+POST        /api/v1/:pkg1/:pkg2/:step              controllers.PhJsonApiController.routes2(pkg1: String, pkg2: String, step: Int)
+
+## MAX Search Flow
+#POST        /api/search/market/all                 controllers.search.market
+#POST        /api/search/history                    controllers.search.history
+#POST        /api/search/check/simple/select        controllers.search.simpleCheckSelect
+#POST        /api/search/check/simple               controllers.search.simpleCheck
+#POST        /api/search/check/result/select        controllers.search.simpleCheckSelect
+#POST        /api/search/check/result               controllers.search.resultCheck
+#POST        /api/search/getExportType              controllers.search.getExportType
+#POST        /api/search/exportData                 controllers.search.exportData
+#POST        /api/search/exportDelivery             controllers.search.exportDelivery
+#
+## MAX Maintenance Center
+#POST        /api/maintenance/companies             controllers.maintenance.getAllCompanies
+#POST        /api/maintenance/module/matchfiles     controllers.maintenance.getSingleModuleAllFiles
+#POST        /api/maintenance/matchfile/replace     controllers.maintenance.replaceMatchFile
+
